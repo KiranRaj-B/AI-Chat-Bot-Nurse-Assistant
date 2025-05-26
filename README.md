@@ -113,14 +113,10 @@ If you need help deploying the **frontend and backend**, feel free to reach out.
 
 ## 📸 Screenshots
 
-_You can insert your project screenshots here:_
 
-![Image 1](![Screenshot 2025-05-27 000627](https://github.com/user-attachments/assets/8d62a2d2-84c7-4e36-9360-ee0089e3d659)
-)
-![Image 2](![Screenshot 2025-05-27 000644](https://github.com/user-attachments/assets/9675ae51-970a-46de-8279-092dc9886c50)
-)
-![Image 3](![Screenshot 2025-05-27 000654](https://github.com/user-attachments/assets/0e079c88-17e5-4763-9eac-7efd8c367699)
-)
+![Screenshot 2025-05-27 000627](https://github.com/user-attachments/assets/8d62a2d2-84c7-4e36-9360-ee0089e3d659)
+![Screenshot 2025-05-27 000644](https://github.com/user-attachments/assets/9675ae51-970a-46de-8279-092dc9886c50)
+![Screenshot 2025-05-27 000654](https://github.com/user-attachments/assets/0e079c88-17e5-4763-9eac-7efd8c367699)
 
 ---
 
