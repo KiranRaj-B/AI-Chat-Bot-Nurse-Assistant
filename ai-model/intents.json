@@ -1,0 +1,310 @@
+{
+  "intents": [
+    {
+      "intent": "Greeting",
+      "text": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening",
+        "Hi there",
+        "Hello there"
+      ],
+      "responses": [
+        "Hi, I am Kiran, your medical assistant. You can contact me at 9611929845 or email kiranrajbadakambi@gmail.com.",
+        "Hello, this is Kiran. How can I assist you medically today?",
+        "Hey, Kiran here. Please share your medical concerns."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "GreetingUserRequest",
+        "clear": false
+      },
+      "entityType": "NA",
+      "entities": []
+    },
+    {
+      "intent": "SymptomCheck",
+      "text": [
+        "I have a headache",
+        "Feeling feverish",
+        "My throat hurts",
+        "I am coughing a lot",
+        "I'm experiencing dizziness",
+        "I have stomach pain",
+        "I feel nauseous",
+        "I have a rash",
+        "I have body aches",
+        "I have difficulty breathing"
+      ],
+      "responses": [
+        "Please describe your symptoms in detail so I can assist you better.",
+        "Can you tell me when these symptoms started?",
+        "Have you taken any medication for these symptoms?",
+        "Are you experiencing any other symptoms along with this?"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "SymptomCheckFollowUp",
+        "clear": false
+      },
+      "entityType": "Symptoms",
+      "entities": [
+        "headache",
+        "fever",
+        "sore throat",
+        "cough",
+        "dizziness",
+        "stomach pain",
+        "nausea",
+        "rash",
+        "body aches",
+        "shortness of breath"
+      ]
+    },
+    {
+      "intent": "AppointmentRequest",
+      "text": [
+        "I want to book an appointment",
+        "Schedule a doctor visit",
+        "Can I see a doctor tomorrow?",
+        "Book a consultation",
+        "I need to meet a specialist",
+        "I'd like to see a doctor",
+        "Can I get an appointment?"
+      ],
+      "responses": [
+        "Please provide your preferred date and time for the appointment.",
+        "Which type of specialist would you like to see?",
+        "I can help you schedule an appointment. What's your availability?",
+        "For which medical concern do you need the appointment?"
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "AppointmentScheduling",
+        "clear": false
+      },
+      "entityType": "AppointmentType",
+      "entities": [
+        "General Physician",
+        "Cardiologist",
+        "Dermatologist",
+        "Neurologist",
+        "Pediatrician"
+      ]
+    },
+    {
+      "intent": "MedicationInquiry",
+      "text": [
+        "What is the dosage for ibuprofen?",
+        "Can I take paracetamol with antibiotics?",
+        "How often should I take my medicine?",
+        "Are there side effects for this medication?",
+        "Is it safe to take this drug while pregnant?",
+        "What are the side effects of aspirin?",
+        "Can I take this medicine with food?",
+        "How long should I take this medication?"
+      ],
+      "responses": [
+        "Please consult your doctor before changing any medication.",
+        "Always follow the prescribed dosage on the medicine label.",
+        "Let me know your current medications to avoid interactions.",
+        "This medication may have side effects like [side_effect]. Consult your doctor if you experience any."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "MedicationAdvice",
+        "clear": false
+      },
+      "entityType": "Medication",
+      "entities": [
+        "ibuprofen",
+        "paracetamol",
+        "aspirin",
+        "antibiotics",
+        "antihistamines"
+      ]
+    },
+    {
+      "intent": "Emergency",
+      "text": [
+        "I am having chest pain",
+        "Someone fainted",
+        "There is heavy bleeding",
+        "I think it's a heart attack",
+        "Call emergency services",
+        "I can't breathe",
+        "I have severe abdominal pain",
+        "I think I broke my bone"
+      ],
+      "responses": [
+        "If this is a medical emergency, please call your local emergency number immediately.",
+        "Stay calm and seek urgent medical help.",
+        "Do you need me to connect you with emergency services?",
+        "Please provide your location so I can assist you further."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "EmergencyResponse",
+        "clear": true
+      },
+      "entityType": "EmergencyType",
+      "entities": [
+        "chest pain",
+        "fainting",
+        "bleeding",
+        "heart attack",
+        "difficulty breathing"
+      ]
+    },
+    {
+      "intent": "GeneralHealthAdvice",
+      "text": [
+        "How can I improve my immunity?",
+        "What are some healthy eating tips?",
+        "How much water should I drink daily?",
+        "Tips for better sleep",
+        "How to manage stress?",
+        "What exercises are good for heart health?"
+      ],
+      "responses": [
+        "Maintaining a balanced diet and regular exercise can improve immunity.",
+        "Drink at least 8 glasses of water daily for good hydration.",
+        "For better sleep, try to maintain a regular sleep schedule and avoid screens before bed.",
+        "Practicing mindfulness and deep breathing can help manage stress."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "GeneralHealthTips",
+        "clear": false
+      },
+      "entityType": "HealthTopic",
+      "entities": [
+        "immunity",
+        "diet",
+        "hydration",
+        "sleep",
+        "stress",
+        "exercise"
+      ]
+    },
+    {
+      "intent": "ClinicInfo",
+      "text": [
+        "What are your working hours?",
+        "Where is the clinic located?",
+        "Do you accept insurance?",
+        "What services do you offer?",
+        "How can I reach the clinic?"
+      ],
+      "responses": [
+        "Our clinic is open from 9 AM to 6 PM, Monday to Saturday.",
+        "We are located at [Clinic Address]. You can find directions on our website.",
+        "Yes, we accept most major insurance providers.",
+        "We offer general consultations, specialist visits, and diagnostic services."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "ClinicInformation",
+        "clear": false
+      },
+      "entityType": "ClinicInfoType",
+      "entities": [
+        "working hours",
+        "location",
+        "insurance",
+        "services",
+        "contact"
+      ]
+    },
+    {
+      "intent": "PrescriptionRefill",
+      "text": [
+        "I need a refill for my prescription",
+        "Can I renew my medication?",
+        "How do I get a prescription refill?",
+        "My medicine is running out"
+      ],
+      "responses": [
+        "Please provide your prescription details for the refill.",
+        "I can help you with a refill. Which medication do you need?",
+        "You can request a refill through our online portal or by visiting the clinic."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "PrescriptionRefillProcess",
+        "clear": false
+      },
+      "entityType": "Medication",
+      "entities": []
+    },
+    {
+      "intent": "Goodbye",
+      "text": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Take care",
+        "Thanks, that's all"
+      ],
+      "responses": [
+        "Take care! Feel free to reach out if you have any more questions.",
+        "Goodbye! Stay healthy.",
+        "See you later. Contact me at 9611929845 if you need further assistance."
+      ],
+      "extension": {
+        "function": "",
+        "entities": false,
+        "responses": []
+      },
+      "context": {
+        "in": "",
+        "out": "",
+        "clear": true
+      },
+      "entityType": "NA",
+      "entities": []
+    }
+  ]
+}
