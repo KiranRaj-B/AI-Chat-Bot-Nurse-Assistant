@@ -23,7 +23,7 @@ function App() {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await axios.post<{ reply: string }>("https://nurse-assistant-ai-chat-bot-model-trained.onrender.com/chat", { text: input });
+      const res = await axios.post<{ reply: string }>("http://localhost:5000/chat", { text: input });
       const botMessage: Message = { sender: "bot", text: res.data.reply };
       setMessages((prev) => [...prev, botMessage]);
     } catch {
