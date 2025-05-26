@@ -8,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# Load trained model, vectorizer and intents
+# Load trained model, vectorizer and intents.
 model = pickle.load(open("model.pkl", "rb"))
 vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
 intents = pickle.load(open("intents.pkl", "rb"))
