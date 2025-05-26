@@ -3,7 +3,7 @@
 This is a simple AI Chat Bot project built for providing basic medical help and support through a conversational interface.
 
 ### 👨‍💻 Developer:
-**Kiran Sadashiv Badakambi**  
+**Kiran Badakambi**  
 📧 Email: [kiranrajbadakambi@gmail.com](mailto:kiranrajbadakambi@gmail.com)
 
 ---
